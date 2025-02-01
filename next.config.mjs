@@ -23,6 +23,15 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  webpack: (config) => {
+    config.watchOptions = {
+      ...config.watchOptions,
+      ignored: ['**/node_modules', '**/dist', '**/.next'],
+      aggregateTimeout: 300,
+      poll: 1000,
+    };
+    return config;
+  },
 };
 
 mergeConfig(nextConfig, userConfig);
