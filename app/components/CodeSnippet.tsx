@@ -37,16 +37,17 @@ export function CodeSnippet() {
         initial={{ opacity: 0 }}
         animate={controls}
         transition={{ duration: 0.5 }}
-        className="p-4 overflow-x-auto"
+        className="p-2 sm:p-4 overflow-x-auto"
       >
-        <pre className="text-sm text-gray-200 text-left">
+        <pre className="text-xs sm:text-sm text-gray-200 text-left whitespace-pre-wrap break-words">
           <code
             className="block"
             dangerouslySetInnerHTML={{
               __html: code
                 .split('\n')
                 .map(
-                  (line, i) => `<div class="typewriter-${i} pl-4">${line}</div>`
+                  (line, i) =>
+                    `<div class="typewriter-${i} pl-2 sm:pl-4">${line}</div>`
                 )
                 .join(''),
             }}
