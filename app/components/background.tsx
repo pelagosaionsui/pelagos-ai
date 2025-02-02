@@ -1,15 +1,18 @@
-import React from "react";
+'use client';
+
+import React from 'react';
+import { GradientBackground } from 'react-gradient-animation';
 
 export function Background() {
   return (
     <div className="fixed inset-0 -z-10">
-      <div
-        className="absolute inset-0 bg-gradient-to-br from-pink-50 via-purple-50 to-purple-100"
-        style={{
-          backgroundImage: `url(${process.env.NEXT_PUBLIC_VERCEL_URL}/noise.png)`,
+      <GradientBackground
+        colors={{
+          background: '#ffffff',
+          particles: ['#3e2fb4', '#37b3d2', '#8811a2'],
         }}
+        skew={0}
       />
     </div>
-  )
+  );
 }
-
