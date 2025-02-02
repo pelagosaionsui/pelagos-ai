@@ -35,7 +35,7 @@ export function Hero() {
             By Pelagos AI
           </h1>
 
-          <p className="text-xl bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-transparent bg-clip-text drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
+          <p className="text-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-[0_2px_2px_rgba(0,0,0,0.2)]">
             The Autonomous and Composable AI Agent Framework on Sui
           </p>
 
