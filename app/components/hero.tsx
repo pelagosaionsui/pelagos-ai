@@ -8,11 +8,11 @@ import DecryptedText from './DecryptedText/DecryptedText';
 import ShinyText from './ShinyText/ShinyText';
 import TrueFocus from './TrueFocus/TrueFocus';
 import { Logo } from './Logo';
+import { CodeSnippet } from './CodeSnippet';
 
 export function Hero() {
   return (
     <div className="relative min-h-screen">
-      {/* <Logo /> */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4">
         <div className="text-center space-y-6 max-w-3xl mx-auto">
           {/* <ShinyText
@@ -39,9 +39,11 @@ export function Hero() {
             The Autonomous and Composable AI Agent Framework on Sui
           </p>
 
+          <CodeSnippet />
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <a
-              href="https://github.com/pelagosaionsui"
+              href="https://github.com/pelagosaionsui/sui-agent-kit"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,9 +57,6 @@ export function Hero() {
             </a>
           </div>
         </div>
-        {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 text-sm text-gray-200">
-          CA: Friendly reminder, we do not have CA yet. Please be cautious.
-        </div> */}
       </div>
     </div>
   );
