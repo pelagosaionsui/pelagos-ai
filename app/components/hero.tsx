@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '../../components/ui/button';
-import { RocketIcon } from 'lucide-react';
+import { RocketIcon, ComputerIcon } from 'lucide-react';
 import React from 'react';
 import Hyperspeed from './Hyperspeed/Hyperspeed';
 import DecryptedText from './DecryptedText/DecryptedText';
@@ -53,6 +53,19 @@ export function Hero() {
               >
                 <RocketIcon className="mr-2 h-4 w-4" />
                 START
+              </Button>
+            </a>
+            <a
+              href="https://pelagos-nextjs-wallet-langchain.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-white hover:bg-slate-200 text-[#6C5CE7] w-full sm:w-auto"
+              >
+                <ComputerIcon className="mr-2 h-4 w-4" />
+                DEMO
               </Button>
             </a>
           </div>
